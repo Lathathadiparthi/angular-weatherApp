@@ -1,0 +1,11 @@
+<div id="bodyMain">
+    
+<div id="weatherMain" >
+    <div>  <img src="https://www.nicepng.com/png/detail/255-2550580_clip-art-images-weather-report-png.png" ></div>
+    <div class="weatherRow"  style="font-size:32px">{{(weatherData.main.temp -273.15).toFixed(0) }}°c</div>
+    <div class="weatherRow" >{{(weatherData.main.temp_min - 273.15).toFixed(0)}}° / {{(weatherData.main.temp_max - 273.15).toFixed(0)}}°  </div>
+     <div class="weatherRow" style="line-height:0px">Feels_like: {{(weatherData.main.feels_like  - 273.15).toFixed(0) }}°   </div>
+    <div class="weatherRow" style="font-size:40px; margin-top:50px;">{{weatherData.name}}   </div>
+    <div class="weatherRow" style="line-height:30px;">Humidity: {{weatherData.main.humidity}}% </div>
+   </div>
+</div>
